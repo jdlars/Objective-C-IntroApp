@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *helloMessage;
 
 @end
 
@@ -23,5 +25,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (IBAction)tappedOnShow:(id)sender {
+    [_helloMessage setText:@"Hello World!"];
+    /*
+     OR can use the following:
+     _helloMessage.text = @"Hello World!";
+     */
+}
+- (IBAction)tappedOnNext:(id)sender {
+    SecondViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
+    [self presentViewController:controller animated:YES completion:NULL];
+}
 @end
