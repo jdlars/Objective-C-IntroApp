@@ -14,6 +14,9 @@
 		7E5E7E171BA212CF00DDB64F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5E7E161BA212CF00DDB64F /* Images.xcassets */; };
 		7E5E7E1A1BA212CF00DDB64F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5E7E181BA212CF00DDB64F /* LaunchScreen.xib */; };
 		7E5E7E261BA212CF00DDB64F /* IntroAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5E7E251BA212CF00DDB64F /* IntroAppTests.m */; };
+		7EBCBEED1BA236E6000BF78A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBCBEEC1BA236E6000BF78A /* SecondViewController.m */; };
+		7EBCBF431BA24128000BF78A /* NutritionalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBCBF421BA24128000BF78A /* NutritionalInformationViewController.m */; };
+		7EBCBF621BA2508D000BF78A /* tomato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EBCBF611BA2508D000BF78A /* tomato.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		7E5E7E1F1BA212CF00DDB64F /* IntroAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5E7E241BA212CF00DDB64F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5E7E251BA212CF00DDB64F /* IntroAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroAppTests.m; sourceTree = "<group>"; };
+		7EBCBEEB1BA236E6000BF78A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		7EBCBEEC1BA236E6000BF78A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7EBCBF411BA24128000BF78A /* NutritionalInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionalInformationViewController.h; sourceTree = "<group>"; };
+		7EBCBF421BA24128000BF78A /* NutritionalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionalInformationViewController.m; sourceTree = "<group>"; };
+		7EBCBF611BA2508D000BF78A /* tomato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomato.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,9 @@
 		7E5E7E081BA212CF00DDB64F /* IntroApp */ = {
 			isa = PBXGroup;
 			children = (
+				7EBCBF611BA2508D000BF78A /* tomato.jpg */,
+				7EBCBEEB1BA236E6000BF78A /* SecondViewController.h */,
+				7EBCBEEC1BA236E6000BF78A /* SecondViewController.m */,
 				7E5E7E0D1BA212CF00DDB64F /* AppDelegate.h */,
 				7E5E7E0E1BA212CF00DDB64F /* AppDelegate.m */,
 				7E5E7E101BA212CF00DDB64F /* ViewController.h */,
@@ -89,6 +100,8 @@
 				7E5E7E161BA212CF00DDB64F /* Images.xcassets */,
 				7E5E7E181BA212CF00DDB64F /* LaunchScreen.xib */,
 				7E5E7E091BA212CF00DDB64F /* Supporting Files */,
+				7EBCBF411BA24128000BF78A /* NutritionalInformationViewController.h */,
+				7EBCBF421BA24128000BF78A /* NutritionalInformationViewController.m */,
 			);
 			path = IntroApp;
 			sourceTree = "<group>";
@@ -201,6 +214,7 @@
 			files = (
 				7E5E7E151BA212CF00DDB64F /* Main.storyboard in Resources */,
 				7E5E7E1A1BA212CF00DDB64F /* LaunchScreen.xib in Resources */,
+				7EBCBF621BA2508D000BF78A /* tomato.jpg in Resources */,
 				7E5E7E171BA212CF00DDB64F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EBCBF431BA24128000BF78A /* NutritionalInformationViewController.m in Sources */,
+				7EBCBEED1BA236E6000BF78A /* SecondViewController.m in Sources */,
 				7E5E7E121BA212CF00DDB64F /* ViewController.m in Sources */,
 				7E5E7E0F1BA212CF00DDB64F /* AppDelegate.m in Sources */,
 				7E5E7E0C1BA212CF00DDB64F /* main.m in Sources */,
@@ -418,6 +434,7 @@
 				7E5E7E2B1BA212CF00DDB64F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E5E7E2C1BA212CF00DDB64F /* Build configuration list for PBXNativeTarget "IntroAppTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				7E5E7E2E1BA212CF00DDB64F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

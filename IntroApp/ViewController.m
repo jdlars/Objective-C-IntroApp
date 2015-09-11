@@ -8,6 +8,12 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
+#import "NutritionalInformationViewController.h"
+
+//Needed for REST api services
+#define BASE_URL "http://cs590bdnlpservices.mybluemix.net/api/service"
+
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *helloMessage;

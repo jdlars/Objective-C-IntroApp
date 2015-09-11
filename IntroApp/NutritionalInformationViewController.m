@@ -1,19 +1,21 @@
 //
-//  SecondViewController.m
+//  NutritionalInformationViewController.m
 //  IntroApp
 //
 //  Created by Larson, Jordan (UMKC-Student) on 9/10/15.
 //  Copyright (c) 2015 Larson, Jordan (UMKC-Student). All rights reserved.
 //
 
-#import "SecondViewController.h"
 #import "NutritionalInformationViewController.h"
-#import "ViewController.h"
-@interface SecondViewController ()
+#import "SecondViewController.h"
+@interface NutritionalInformationViewController ()
+
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageTomato;
 
 @end
 
-@implementation SecondViewController
+@implementation NutritionalInformationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,17 +26,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)tappedOnNext:(id)sender {
-    NutritionalInformationViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"NutritionalInformationViewController"];
-    [self presentViewController:controller animated:YES completion:NULL];
+
+- (IBAction)seeImageButton:(id)sender {
+    _imageTomato.image=[UIImage imageNamed:@"tomato.jpg"];
 }
+
 
 - (IBAction)tappedOnBack:(id)sender {
-    ViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    SecondViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"];
     [self presentViewController:controller animated:YES completion:NULL];
 }
-
-
 
 /*
 #pragma mark - Navigation
